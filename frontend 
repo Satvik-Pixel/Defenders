@@ -1,1 +1,833 @@
-hello
+DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF 8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Disease Detection - AI Powered Agriculture Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;40
+0;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloud are.com/ajax/libs/font-awesome/6.0.0/css/all
+.min.css" rel="stylesheet">
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Poppins', sans-serif;
+line-height: 1.6;
+color: #333;
+over ow-x: hidden;
+}
+/* Navigation */
+.navbar {
+position: xed;
+top: 0;
+width: 100%;
+background: rgba(34, 139, 34, 0.95);
+backdrop- lter: blur(10px);
+z-index: 1000;
+padding: 1rem 0;
+transition: all 0.3s ease;
+}
+.navbar.scrolled {
+background: rgba(34, 139, 34, 0.98);
+box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+.nav-container {
+max-width: 1200px;
+margin: 0 auto;
+display: ex;
+justify-content: space-between;
+align-items: center;
+padding: 0 2rem;
+}
+.logo {
+font-size: 1.5rem;
+font-weight: 700;
+color: white;
+text-decoration: none;
+}
+.nav-links {
+display: ex;
+list-style: none;
+gap: 2rem;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+transition: all 0.3s ease;
+position: relative;
+}
+.nav-links a:hover {
+}
+color: #90EE90;
+.nav-links a.active {
+color: #90EE90;
+}
+.nav-links a::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0;
+height: 2px;
+background: #90EE90;
+transition: width 0.3s ease;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+width: 100%;
+}
+.mobile-toggle {
+display: none;
+color: white;
+font-size: 1.5rem;
+cursor: pointer;
+}
+/* Hero Section */
+.hero {
+height: 100vh;
+background: linear-gradient(rgba(34, 139, 34, 0.7), rgba(85, 107, 47, 0.7)),
+url('https://images.unsplash.com/photo-1560493676 04071c5f467
+b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx
+8fA%3D%3D&auto=format& t=crop&w=1974&q=80') center/cover;
+display: ex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+position: relative;
+}
+.hero-content h1 {
+font-size: 4rem;
+font-weight: 700;
+margin-bottom: 1rem;
+animation: fadeInUp 1s ease;
+}
+.hero-content p {
+font-size: 1.3rem;
+margin-bottom: 2rem;
+max-width: 600px;
+animation: fadeInUp 1s ease 0.3s both;
+}
+.cta-button {
+display: inline-block;
+padding: 1rem 2rem;
+background: linear-gradient(45deg, #32CD32, #228B22);
+color: white;
+text-decoration: none;
+font-weight: 600;
+font-size: 1.1rem;
+border-radius: 50px;
+transition: all 0.3s ease;
+animation: fadeInUp 1s ease 0.6s both;
+box-shadow: 0 4px 15px rgba(50, 205, 50, 0.3);
+}
+.cta-button:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 25px rgba(50, 205, 50, 0.4);
+}
+/* Section Styling */
+.section {
+padding: 5rem 0;
+opacity: 0;
+transform: translateY(30px);
+transition: all 0.8s ease;
+}
+.section.visible {
+opacity: 1;
+transform: translateY(0);
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+}
+.section-title {
+text-align: center;
+font-size: 2.5rem;
+font-weight: 700;
+color: #2F4F2F;
+margin-bottom: 1rem;
+}
+.section-subtitle {
+text-align: center;
+}
+font-size: 1.1rem;
+color: #666;
+margin-bottom: 3rem;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+/* Problem Statement */
+.problem {
+background: #f8f9fa;
+}
+.problem-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+align-items: center;
+}
+.problem-text {
+font-size: 1.1rem;
+line-height: 1.8;
+color: #555;
+}
+.problem-image {
+border-radius: 15px;
+over ow: hidden;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+.problem-image:hover {
+transform: scale(1.05);
+}
+.problem-image img {
+width: 100%;
+height: 300px;
+object- t: cover;
+}
+/* Research Section */
+.research-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+align-items: center;
+}
+.research-text {
+font-size: 1.1rem;
+line-height: 1.8;
+color: #555;
+}
+.research-image {
+border-radius: 15px;
+over ow: hidden;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+.research-image:hover {
+transform: scale(1.05);
+}
+.research-image img {
+width: 100%;
+height: 300px;
+object- t: cover;
+}
+/* Context Section */
+.context {
+background: linear-gradient(135deg, #228B22, #32CD32);
+color: white;
+}
+.context-grid {
+display: grid;
+grid-template-columns: repeat(auto- t, minmax(300px, 1fr));
+gap: 2rem;
+}
+.context-card {
+background: rgba(255, 255, 255, 0.1);
+padding: 2rem;
+border-radius: 15px;
+backdrop- lter: blur(10px);
+transition: transform 0.3s ease;
+}
+.context-card:hover {
+transform: translateY(-5px);
+}
+.context-card i {
+font-size: 3rem;
+margin-bottom: 1rem;
+color: #90EE90;
+}
+.context-card h3 {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+/* Stats Section */
+.stats {
+background: #f8f9fa;
+}
+.stats-grid {
+display: grid;
+grid-template-columns: repeat(auto- t, minmax(250px, 1fr));
+gap: 2rem;
+}
+.stat-card {
+background: white;
+padding: 2rem;
+border-radius: 15px;
+text-align: center;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+.stat-card:hover {
+transform: translateY(-5px);
+}
+.stat-number {
+font-size: 3rem;
+font-weight: 700;
+color: #228B22;
+margin-bottom: 0.5rem;
+}
+.stat-label {
+font-size: 1.1rem;
+color: #666;
+}
+/* Features Section */
+.features-grid {
+display: grid;
+grid-template-columns: repeat(auto- t, minmax(300px, 1fr));
+gap: 2rem;
+}
+.feature-card {
+background: white;
+padding: 2rem;
+border-radius: 15px;
+text-align: center;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+border: 2px solid transparent;
+}
+.feature-card:hover {
+transform: translateY(-10px);
+border-color: #32CD32;
+box-shadow: 0 15px 40px rgba(50, 205, 50, 0.2);
+}
+.feature-card i {
+font-size: 3rem;
+color: #228B22;
+margin-bottom: 1rem;
+}
+.feature-card h3 {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+color: #2F4F2F;
+}
+.feature-card p {
+color: #666;
+line-height: 1.6;
+}
+/* About Section */
+.about {
+background: #f8f9fa;
+}
+.team-grid {
+display: grid;
+grid-template-columns: repeat(auto- t, minmax(250px, 1fr));
+gap: 2rem;
+}
+.team-card {
+background: white;
+padding: 2rem;
+border-radius: 15px;
+text-align: center;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+.team-card:hover {
+transform: translateY(-5px);
+}
+.team-avatar {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+margin: 0 auto 1rem;
+background: linear-gradient(45deg, #32CD32, #228B22);
+display: ex;
+}
+align-items: center;
+justify-content: center;
+font-size: 3rem;
+color: white;
+font-weight: 700;
+.team-name {
+font-size: 1.3rem;
+font-weight: 600;
+color: #2F4F2F;
+margin-bottom: 0.5rem;
+}
+.team-role {
+color: #666;
+margin-bottom: 1rem;
+}
+.social-links a {
+color: #228B22;
+font-size: 1.2rem;
+margin: 0 0.5rem;
+transition: color 0.3s ease;
+}
+.social-links a:hover {
+color: #32CD32;
+}
+/* Contact Section */
+.contact {
+background: linear-gradient(135deg, #2F4F2F, #228B22);
+color: white;
+}
+.contact-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+align-items: start;
+}
+.contact-info h3 {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+.contact-info p {
+margin-bottom: 1rem;
+opacity: 0.9;
+}
+.contact-form {
+background: rgba(255, 255, 255, 0.1);
+padding: 2rem;
+border-radius: 15px;
+backdrop- lter: blur(10px);
+}
+.form-group {
+margin-bottom: 1.5rem;
+}
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: 500;
+}
+.form-group input,
+.form-group textarea {
+}
+width: 100%;
+padding: 0.8rem;
+border: none;
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.9);
+font-family: inherit;
+transition: all 0.3s ease;
+.form-group input:focus,
+.form-group textarea:focus {
+outline: none;
+box-shadow: 0 0 0 3px rgba(144, 238, 144, 0.3);
+}
+.form-group textarea {
+height: 120px;
+resize: vertical;
+}
+.submit-btn {
+background: linear-gradient(45deg, #32CD32, #228B22);
+color: white;
+padding: 1rem 2rem;
+border: none;
+border-radius: 50px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+font-family: inherit;
+font-size: 1rem;
+}
+.submit-btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(50, 205, 50, 0.4);
+}
+/* Footer */
+.footer {
+background: #1a1a1a;
+color: white;
+text-align: center;
+padding: 2rem 0;
+}
+/* Animations */
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+@keyframes countUp {
+from {
+opacity: 0;
+transform: scale(0.5);
+}
+to {
+opacity: 1;
+transform: scale(1);
+}
+}
+.fade-in {
+opacity: 0;
+transform: translateY(30px);
+}
+transition: all 0.8s ease;
+.fade-in.visible {
+opacity: 1;
+transform: translateY(0);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+.mobile-toggle {
+display: block;
+}
+.nav-links {
+position: xed;
+top: 100%;
+left: 0;
+width: 100%;
+background: rgba(34, 139, 34, 0.98);
+ex-direction: column;
+text-align: center;
+padding: 2rem 0;
+transform: translateY(-100%);
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s ease;
+}
+.nav-links.active {
+transform: translateY(0);
+opacity: 1;
+visibility: visible;
+}
+.hero-content h1 {
+}
+font-size: 2.5rem;
+.hero-content p {
+font-size: 1.1rem;
+}
+.section-title {
+font-size: 2rem;
+}
+.problem-content,
+.research-content,
+.contact-content {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+.context-grid,
+.stats-grid,
+.features-grid,
+.team-grid {
+grid-template-columns: 1fr;
+}
+.nav-container {
+padding: 0 1rem;
+}
+}
+.container {
+padding: 0 1rem;
+}
+@media (max-width: 480px) {
+.hero-content h1 {
+}
+font-size: 2rem;
+.section {
+padding: 3rem 0;
+}
+}
+.stat-number {
+font-size: 2rem;
+}
+/* Scroll indicator */
+.scroll-indicator {
+position: xed;
+top: 0;
+left: 0;
+width: 0%;
+height: 3px;
+background: linear-gradient(to right, #32CD32, #228B22);
+z-index: 1001;
+transition: width 0.3s ease;
+}
+</style>
+</head>
+<body>
+<!-- Scroll Indicator -->
+<div class="scroll-indicator" id="scrollIndicator"></div>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+<div class="nav-container">
+<a href="#home" class="logo">🌱 PlantCare AI</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home" class="nav-link active">Home</a></li>
+<li><a href="#problem" class="nav-link">Problem</a></li>
+<li><a href="#research" class="nav-link">Research</a></li>
+<li><a href="#context" class="nav-link">Context</a></li>
+<li><a href="#stats" class="nav-link">Stats</a></li>
+<li><a href="#features" class="nav-link">Features</a></li>
+<li><a href="#about" class="nav-link">About</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+<div class="mobile-toggle" id="mobileToggle">
+<i class="fas fa-bars"></i>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Plant Disease Detection</h1>
+<p>Revolutionizing agriculture with AI-powered early disease detection. H
+elp farmers save crops, increase yields, and ensure food security for the future.
+</p>
+<a href="#features" class="cta-button">Try It Now</a>
+</div>
+</section>
+<!-- Problem Statement -->
+<section class="section problem" id="problem">
+<div class="container">
+<h2 class="section-title fade-in"> e Problem</h2>
+<p class="section-subtitle fade-in">Farmers worldwide struggle with crop
+diseases that devastate harvests</p>
+<div class="problem-content fade-in">
+<div class="problem-text">
+<h3 style="color: #228B22; margin-bottom: 1rem; font-size: 1.5rem;">
+Devastating Crop Losses</h3>
+<p>Every year, plant diseases destroy 20 40% of global crop producti
+on, causing billions in losses and threatening food security. Traditional disease d
+etection methods are often too slow, requiring expert knowledge that many far
+mers lack.</p>
+<p>By the time visible symptoms appear, it's often too late to save the
+crop. Farmers need early detection tools that are accessible, accurate, and a o
+rdable to protect their livelihoods and feed the world.</p>
+<p>Late detection leads to excessive pesticide use, environmental da
+mage, and reduced crop quality - problems that a ect everyone from farmers to
+consumers.</p>
+</div>
+<div class="problem-image">
+<img src="https://images.unsplash.com/photo-1574323347407-f5e1a
+d6d020b?ixlib=rb-4.0.3&auto=format& t=crop&w=1000&q=80" alt="Diseased
+crop eld" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+<!-- Research Solution -->
+<section class="section research" id="research">
+<div class="container">
+<h2 class="section-title fade-in">Our AI Solution</h2>
+<p class="section-subtitle fade-in">Advanced machine learning for instant
+disease identi cation</p>
+>
+<div class="research-content fade-in">
+<div class="research-image">
+<img src="download.jpg"AI technology analyzing plants" loading="lazy"
+</div>
+<div class="research-text">
+<h3 style="color: #228B22; margin-bottom: 1rem; font-size: 1.5rem;">
+Cutting-Edge Technology</h3>
+<p>Our deep learning models are trained on thousands of plant images
+, enabling instant disease identi cation with 95%+ accuracy. Simply take a phot
+o with your smartphone and get immediate diagnosis and treatment recommend
+ations.</p>
+<p>Using convolutional neural networks and computer vision, our AI c
+an detect diseases in their earliest stages - often before symptoms are visible to
+the human eye.</p>
+<p> e system continuously learns and improves, incorporating new d
+isease patterns and regional variations to provide the most accurate diagnosis p
+ossible.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Context Section -->
+<section class="section context" id="context">
+<div class="container">
+<h2 class="section-title fade-in">Why It Matters</h2>
+<p class="section-subtitle fade-in">Understanding the global impact of pla
+nt disease detection</p>
+<div class="context-grid fade-in">
+<div class="context-card">
+<i class="fas fa-globe-americas"></i>
+<h3>Global Food Security</h3>
+<p>With the world population reaching 9.7 billion by 2050, protecting
+crops from disease is crucial for feeding everyone. Early detection can prevent
+massive food shortages.</p>
+</div>
+<div class="context-card">
+<i class="fas fa-leaf"></i>
+<h3>Environmental Protection</h3>
+<p>Targeted treatment reduces pesticide use by 60%, protecting ben
+e cial insects, soil health, and water systems while maintaining crop productivity
+.</p>
+</div>
+<div class="context-card">
+<i class="fas fa-coins"></i>
+<h3>Economic Impact</h3>
+<p>Plant diseases cost the global economy over $220 billion annually.
+Early detection can save farmers up to 80% of potential crop losses.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="section stats" id="stats">
+<div class="container">
+<h2 class="section-title fade-in">Impact by Numbers</h2>
+<p class="section-subtitle fade-in">Real results from our AI technology</
+p>
+<div class="stats-grid fade-in">
+<div class="stat-card">
+<div class="stat-number" data-count="95">0</div>
+<div class="stat-label">Detection Accuracy</div>
+</div>
+<div class="stat-card">
+<div class="stat-number" data-count="75">0</div>
+<div class="stat-label">Crop Loss Reduction</div>
+</div>
+<div class="stat-card">
+<div class="stat-number" data-count="50000">0</div>
+<div class="stat-label">Farmers Helped</div>
+</div>
+<div class="stat-card">
+<div class="stat-number" data-count="200">0</div>
+<div class="stat-label">Plant Diseases Detected</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="section features" id="features">
+<div class="container">
+<h2 class="section-title fade-in">Why Choose PlantCare AI</h2>
+<p class="section-subtitle fade-in">Powerful features designed for moder
+n farmers</p>
+<div class="features-grid fade-in">
+<div class="feature-card">
+<i class="fas fa-bolt"></i>
+<h3>Lightning Fast</h3>
+<p>Get instant disease diagnosis in under 3 seconds. Our optimized AI
+models provide real-time results so you can act quickly to save your crops.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-bullseye"></i>
+<h3>Highly Accurate</h3>
+<p>95%+ accuracy rate validated by agricultural experts. Our AI is tra
+ined on millions of plant images from around the world.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-dollar-sign"></i>
+<h3>A ordable</h3>
+<p>Save thousands on crop losses and reduce pesticide costs. Our sol
+ution pays for itself with just one prevented disease outbreak.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-mobile-alt"></i>
+<h3>Mobile-First</h3>
+<p>Works on any smartphone or tablet. No expensive equipment need
+ed - just point, shoot, and get instant diagnosis anywhere in the eld.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-clock"></i>
+<h3>24/7 Available</h3>
+<p>Get help anytime, anywhere. Our AI never sleeps, providing roundthe-clock disease monitoring for your peace of mind.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-prescription-bottle"></i>
+<h3>Treatment Recommendations</h3>
+<p>Not just detection - get speci c treatment plans, organic solutions,
+and prevention strategies tailored to your crops and region.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="section about" id="about">
+<div class="container">
+<h2 class="section-title fade-in">Meet Our Team</h2>
+<p class="section-subtitle fade-in">Passionate fellows dedicated to revolu
+tionizing agriculture</p>
+>
+<div class="team-grid fade-in">
+<div class="team-card">
+<div class="team-avatar">DJ</div>
+<div class="team-name">Divyajot Singh</div>
+<div class="team-role">Lead ML Engineer</div>
+<div class="social-links">
+<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a
+<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+<div class="team-card">
+>
+>
+>
+<div class="team-avatar">JS</div>
+<div class="team-name">Jaspreet Singh</div>
+<div class="team-role">Front-end and Research</div>
+<div class="social-links">
+<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a
+<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+<div class="team-card">
+<div class="team-avatar">SP</div>
+<div class="team-name">Satvik Prajapati</div>
+<div class="team-role">Backend Developer</div>
+<div class="social-links">
+<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a
+<a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+</div>
+</div>
+<div class="team-card">
+<div class="team-avatar">SK</div>
+<div class="team-name">Sania Khan</div>
+<div class="team-role">Front-end</div>
+<div class="social-links">
+<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a
+<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="section contact" id="contact">
+<div class="container">
+<h2 class="section-title fade-in">Get In Touch</h2>
+<p class="section-subtitle fade-in">Ready to transform your farming with
+AI? Contact us today</p>
+<div class="contact-content fade-in">
+<div class="contact-info">
+<h3>Let's Work Together</h3>
+<p>Whether you're a farmer, agricultural organization, or technology
+partner, we'd love to hear from you. Our team is here to help you implement cutti
+ng-edge plant disease detection solutions.</p>
+<p><i class="fas fa-envelope"></i> info@plantcareai.com</p>
+<p><i class="fas fa-phone"></i> +91 98765 43210</p>
+<p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<p>&copy; 2025 PlantCare AI. All rights reserved. Built with ❤ for farmer
+s worldwide.</p>
+</div>
+</footer>
+<script>
+// Mobile Navigation Toggle
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+mobileToggle.addEventListener('click', () => {
+navLinks.classList.toggle('active');
+const icon = mobileToggle.querySelector('i');
+icon.classList.toggle('fa-bars');
+icon.classList.toggle('fa-times');
+});
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+// Close mobile menu if open
+navLinks.
