@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result – GreenGuard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link rel="stylesheet" href="style2.css">
+  <section class="result">
+    <h2>Detection Result</h2>
+    <img id="preview" alt="Uploaded Leaf" style="max-width:300px;">
+    <p id="output"></p>
+    <br>
+    <a href="upload.html">🔄 Try Another</a>
+    <br><br>
+    <a href="index.html">🏠 Back to Home</a>
+  </section>
+
+  <script>
+    // Fetch file name from storage
+    let uploadedFile = localStorage.getItem("uploadedFile");
+    let preview = document.getElementById("preview");
+    let output = document.getElementById("output");
+
+    if(uploadedFile){
+      // Dummy: show detection
+      preview.src = "leaf-sample.jpg"; // replace later with actual preview
+      output.innerHTML = "<strong>Possible Disease:</strong> Early Blight <br><strong>Remedy:</strong> Use fungicide and remove infected leaves.";
+    } else {
+      output.innerText = "⚠ No image uploaded.";
+    }
+  </script>
+</body>
+</html>

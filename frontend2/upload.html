@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Leaf – GreenGuard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link rel="stylesheet" href="style2.css">
+  <section class="upload">
+    <h2>Upload or capture a photo of your Plant Leaf</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="fileInput" accept="image/*" capture="environment" required>
+      <button type="submit" class="btn">🔍 Detect Disease</button>
+    </form>
+    <br>
+    <a href="index.html">⬅ Back to Home</a>
+  </section>
+
+  <script>
+    document.getElementById("uploadForm").onsubmit = function(e){
+      e.preventDefault();
+      let file = document.getElementById("fileInput").files[0];
+      if(file){
+        // Pass image name (or base64 later) to next page
+        localStorage.setItem("uploadedFile", file.name);
+        window.location.href = "result.html";
+      } else {
+        alert("⚠ Please select an image first.");
+      }
+    };
+  </script>
+</body>
+</html>

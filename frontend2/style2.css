@@ -1,0 +1,124 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e8f9e9, #d4f1d2);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Container ===== */
+section {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ===== Titles ===== */
+h1, h2 {
+  color: #2d6a4f;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ===== Buttons ===== */
+button, .btn, a button {
+  background: #2d6a4f;
+  color: #fff;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover, a button:hover {
+  background: #1b4332;
+  transform: translateY(-2px);
+}
+
+/* ===== Links ===== */
+a {
+  color: #2d6a4f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1b4332;
+}
+
+/* ===== File Input (Upload Page) ===== */
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+  padding: 12px;
+  border: 2px dashed #2d6a4f;
+  border-radius: 10px;
+  background: #f1fff1;
+  cursor: pointer;
+  width: 100%;
+  max-width: 350px;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background: #e4ffe5;
+  border-color: #1b4332;
+}
+
+/* ===== Result Image ===== */
+#preview {
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 12px;
+  border: 3px solid #2d6a4f;
+  padding: 5px;
+  background: #f9fff9;
+  max-height: 250px;
+}
+
+/* ===== Output Text ===== */
+#output {
+  background: #f1fff1;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  border: 1px solid #b7e4c7;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
