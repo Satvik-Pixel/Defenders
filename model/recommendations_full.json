@@ -1,0 +1,610 @@
+{
+  "Apple___Apple_scab": {
+    "recommendation": "Rake and destroy fallen leaves, prune for airflow, and plant resistant cultivars where possible.",
+    "ipm_steps": [
+      "Remove fallen debris",
+      "Improve airflow via pruning",
+      "Plant resistant varieties"
+    ],
+    "chemical_options": "Preventive copper sprays (last resort, follow local guidance)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Apple___Black_rot": {
+    "recommendation": "Prune and remove infected tissue, destroy mummified fruit, and improve vine sanitation.",
+    "ipm_steps": [
+      "Prune out infected wood",
+      "Remove and destroy mummies",
+      "Improve canopy airflow"
+    ],
+    "chemical_options": "Targeted fungicide sprays advised by local extension (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Apple___Cedar_apple_rust": {
+    "recommendation": "Remove nearby junipers if practical, prune infected tissue, and use resistant varieties if available.",
+    "ipm_steps": [
+      "Remove or distance alternate hosts",
+      "Prune infected twigs",
+      "Plant resistant varieties"
+    ],
+    "chemical_options": "Copper fungicides as preventive in high-risk areas (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Apple___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Blueberry___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "recommendation": "Improve airflow and light, remove infected leaves, and use sulfur or horticultural oils if needed.",
+    "ipm_steps": [
+      "Improve spacing and airflow",
+      "Remove infected parts",
+      "Avoid overhead watering"
+    ],
+    "chemical_options": "Sulfur or horticultural oils (organic options)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Cherry_(including_sour)___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "recommendation": "Practice crop rotation, remove crop residue, and use resistant hybrids where possible.",
+    "ipm_steps": [
+      "Rotate crops",
+      "Remove and bury residue",
+      "Select resistant hybrids"
+    ],
+    "chemical_options": "Fungicide application under extension guidance (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Corn_(maize)___Common_rust_": {
+    "recommendation": "Plant resistant hybrids, manage residue, and monitor regularly during warm, humid weather.",
+    "ipm_steps": [
+      "Plant resistant varieties",
+      "Manage residue",
+      "Monitor and scout regularly"
+    ],
+    "chemical_options": "Fungicides may be used for severe outbreaks (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "recommendation": "Use crop rotation, avoid continuous maize, and remove residue to reduce inoculum.",
+    "ipm_steps": [
+      "Rotate crops",
+      "Tillage or residue management",
+      "Use resistant hybrids"
+    ],
+    "chemical_options": "Fungicide only if advised by extension",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Corn_(maize)___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Grape___Black_rot": {
+    "recommendation": "Prune and remove infected tissue, destroy mummified fruit, and improve vine sanitation.",
+    "ipm_steps": [
+      "Prune out infected wood",
+      "Remove and destroy mummies",
+      "Improve canopy airflow"
+    ],
+    "chemical_options": "Targeted fungicide sprays advised by local extension (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "recommendation": "Prune and remove infected tissue, destroy mummified fruit, and improve vine sanitation.",
+    "ipm_steps": [
+      "Prune out infected wood",
+      "Remove and destroy mummies",
+      "Improve canopy airflow"
+    ],
+    "chemical_options": "Targeted fungicide sprays advised by local extension (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "recommendation": "Prune and remove infected tissue, destroy mummified fruit, and improve vine sanitation.",
+    "ipm_steps": [
+      "Prune out infected wood",
+      "Remove and destroy mummies",
+      "Improve canopy airflow"
+    ],
+    "chemical_options": "Targeted fungicide sprays advised by local extension (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Grape___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "recommendation": "No cure \u2014 remove infected trees, control the Asian citrus psyllid vector, and plant certified disease-free stock.",
+    "ipm_steps": [
+      "Rogue infected trees",
+      "Control psyllid vectors",
+      "Use certified disease-free seedlings"
+    ],
+    "chemical_options": "Insecticidal sprays for vector control (last resort, follow local rules)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Peach___Bacterial_spot": {
+    "recommendation": "Remove infected plant parts, avoid overhead irrigation, and use copper bactericides only if necessary.",
+    "ipm_steps": [
+      "Prune infected tissue",
+      "Avoid wet foliage",
+      "Sanitize tools"
+    ],
+    "chemical_options": "Copper bactericides (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Peach___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "recommendation": "Remove infected plant parts, avoid overhead irrigation, and use copper bactericides only if necessary.",
+    "ipm_steps": [
+      "Prune infected tissue",
+      "Avoid wet foliage",
+      "Sanitize tools"
+    ],
+    "chemical_options": "Copper bactericides (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Pepper,_bell___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Potato___Early_blight": {
+    "recommendation": "Remove lower infected leaves, mulch to prevent soil splash, and rotate crops.",
+    "ipm_steps": [
+      "Mulch to reduce soil splash",
+      "Remove lower leaves",
+      "Rotate crops and improve airflow"
+    ],
+    "chemical_options": "Organic protectants (copper/biologicals) if severe",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Potato___Late_blight": {
+    "recommendation": "Destroy infected plants, avoid moving foliage, and improve drainage; consult extension for options.",
+    "ipm_steps": [
+      "Destroy infected plants",
+      "Avoid overhead watering",
+      "Improve drainage"
+    ],
+    "chemical_options": "Organic-approved copper formulations as last resort",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Potato___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Raspberry___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Soybean___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Squash___Powdery_mildew": {
+    "recommendation": "Improve airflow and light, remove infected leaves, and use sulfur or horticultural oils if needed.",
+    "ipm_steps": [
+      "Improve spacing and airflow",
+      "Remove infected parts",
+      "Avoid overhead watering"
+    ],
+    "chemical_options": "Sulfur or horticultural oils (organic options)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Strawberry___Leaf_scorch": {
+    "recommendation": "Remove affected tissue, improve irrigation practices, and manage soil nutrition and drainage.",
+    "ipm_steps": [
+      "Remove infected leaves",
+      "Adjust irrigation",
+      "Improve soil health"
+    ],
+    "chemical_options": "Fungicides seldom effective; consult extension",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Strawberry___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Bacterial_spot": {
+    "recommendation": "Remove infected plant parts, avoid overhead irrigation, and use copper bactericides only if necessary.",
+    "ipm_steps": [
+      "Prune infected tissue",
+      "Avoid wet foliage",
+      "Sanitize tools"
+    ],
+    "chemical_options": "Copper bactericides (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Early_blight": {
+    "recommendation": "Remove lower infected leaves, mulch to prevent soil splash, and rotate crops.",
+    "ipm_steps": [
+      "Mulch to reduce soil splash",
+      "Remove lower leaves",
+      "Rotate crops and improve airflow"
+    ],
+    "chemical_options": "Organic protectants (copper/biologicals) if severe",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Late_blight": {
+    "recommendation": "Destroy infected plants, avoid moving foliage, and improve drainage; consult extension for options.",
+    "ipm_steps": [
+      "Destroy infected plants",
+      "Avoid overhead watering",
+      "Improve drainage"
+    ],
+    "chemical_options": "Organic-approved copper formulations as last resort",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Leaf_Mold": {
+    "recommendation": "Improve airflow and reduce humidity, remove affected leaves, and practice good sanitation.",
+    "ipm_steps": [
+      "Improve ventilation",
+      "Remove affected leaves",
+      "Avoid wetting foliage"
+    ],
+    "chemical_options": "Use organic fungicides per local guidance if required",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "recommendation": "Remove infected foliage, rotate crops, and avoid overhead irrigation.",
+    "ipm_steps": [
+      "Remove infected leaves",
+      "Rotate crops",
+      "Avoid wet foliage"
+    ],
+    "chemical_options": "Organic-approved fungicides as preventive (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "recommendation": "Increase humidity, spray plants with water to knock off mites, and encourage predatory mites.",
+    "ipm_steps": [
+      "Increase humidity and wash leaves",
+      "Introduce predatory mites",
+      "Use insecticidal soap or neem"
+    ],
+    "chemical_options": "Selective miticides only if severe",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Target_Spot": {
+    "recommendation": "Remove affected tissue, avoid overhead watering, and practice crop rotation.",
+    "ipm_steps": [
+      "Remove infected areas",
+      "Avoid wet foliage",
+      "Rotate crops"
+    ],
+    "chemical_options": "Use fungicides under extension guidance if necessary",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "recommendation": "No cure\u2014remove infected plants, control whitefly vectors, and use resistant varieties.",
+    "ipm_steps": [
+      "Rogue infected plants",
+      "Control whitefly vectors",
+      "Use resistant cultivars"
+    ],
+    "chemical_options": "Insecticidal control of vectors (last resort)",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "recommendation": "Remove infected plants, disinfect tools, control aphid vectors, and use resistant varieties.",
+    "ipm_steps": [
+      "Remove infected plants",
+      "Disinfect tools",
+      "Control vectors like aphids"
+    ],
+    "chemical_options": "No chemical cure; control vectors if necessary",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  },
+  "Tomato___healthy": {
+    "recommendation": "No action needed. Maintain good cultural practices: proper watering, balanced nutrition, and regular monitoring.",
+    "ipm_steps": [
+      "Regular monitoring",
+      "Balanced watering and feeding",
+      "Good sanitation and crop rotation"
+    ],
+    "chemical_options": "Not applicable",
+    "references": [
+      "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "https://ipm.ucanr.edu/PMG/selectnewpest.crops.html",
+      "https://www.rhs.org.uk/advice",
+      "https://extension.purdue.edu/",
+      "https://www.usda.gov/"
+    ]
+  }
+}
