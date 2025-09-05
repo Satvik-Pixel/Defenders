@@ -1,3 +1,13 @@
+with open("recommendations_short.json", "r") as f: #open any of the 2 rec files here
+    treatment_dict = json.load(f)
+
+# Label normalization
+def normalize_label(label: str) -> str:
+    label = label.strip().lower()
+    label = re.sub(r'[^a-z0-9]+', '_', label)  # replace non-alphanum with underscores
+    label = re.sub(r'_+', '_', label)          # collapse multiple underscores
+    return label.strip('_')
+
 # Main prediction function for Flask
 def predict_image_bytes(image_bytes, model, class_names, val_transforms, device, confidence_threshold=0.70):
     image = Image.open(BytesIO(image_bytes)).convert("RGB")
