@@ -4,31 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Upload Leaf – GreenGuard</title>
-  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
     <link rel="stylesheet" href="style2.css">
   <section class="upload">
-    <h2>Upload or capture a photo of your Plant Leaf</h2>
+    <h2>Upload or Capture a Photo of your Plant Leaf</h2>
+
+    <!-- Upload Option -->
     <form id="uploadForm" enctype="multipart/form-data">
-      <input type="file" id="fileInput" accept="image/*" capture="environment" required>
+      <input type="file" id="fileInput" accept="image/*" required>
       <button type="submit" class="btn">🔍 Detect Disease</button>
     </form>
+
+    <hr>
+
+    <!-- Camera Option -->
+    <div class="camera-section">
+      <video id="camera" autoplay playsinline width="300"></video>
+      <canvas id="canvas" style="display:none;"></canvas>
+      <br>
+      <button id="startCamera" type="button">📷 Start Camera</button>
+      <button id="captureBtn" type="button" style="display:none;">📸 Capture Photo</button>
+      <button id="useCaptured" type="button" style="display:none;">✅ Use Captured Image</button>
+    </div>
+
     <br>
     <a href="index.html">⬅ Back to Home</a>
   </section>
 
   <script>
+    // Handle Upload Form
     document.getElementById("uploadForm").onsubmit = function(e){
       e.preventDefault();
       let file = document.getElementById("fileInput").files[0];
       if(file){
-        // Pass image name (or base64 later) to next page
+        // Save file name (you can switch to base64 if needed)
         localStorage.setItem("uploadedFile", file.name);
         window.location.href = "result.html";
       } else {
         alert("⚠ Please select an image first.");
       }
+    };
+
+    // Camera Logic
+    const video = document.getElementById("camera");
+    const canvas = document.getElementById("canvas");
+    const startBtn = document.getElementById("startCamera");
+    const captureBtn = document.getElementById("captureBtn");
+    const useBtn = document.getElementById("useCaptured");
+
+    let stream;
+
+    startBtn.onclick = async function(){
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        video.srcObject = stream;
+        captureBtn.style.display = "inline-block";
+      } catch (err) {
+        alert("Camera access denied or not available.");
+      }
+    };
+
+    captureBtn.onclick = function(){
+      const context = canvas.getContext("2d");
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      // Show snapshot instead of live video
+      video.style.display = "none";
+      canvas.style.display = "block";
+      captureBtn.style.display = "none";
+      useBtn.style.display = "inline-block";
+    };
+
+    useBtn.onclick = function(){
+      let imageData = canvas.toDataURL("image/png"); // Base64
+      localStorage.setItem("uploadedFile", imageData);
+      if(stream){
+        stream.getTracks().forEach(track => track.stop()); // stop camera
+      }
+      window.location.href = "result.html";
     };
   </script>
 </body>
